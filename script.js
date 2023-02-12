@@ -1,3 +1,5 @@
+// Last update JavasCript 12/02/2023
+
 const contactDev = document.querySelector('.contact-msg-developer')
 const contactPed = document.querySelector('.contact-msg-pedagogy')
 const contactDes = document.querySelector('.contact-msg-design')
