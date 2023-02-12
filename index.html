@@ -6,71 +6,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>nice-to-meet-you v1.0</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="menu" href="#Home">INICIO</a>
-            <a class="menu" href="#Portfolio">PORTFOLIO</a>
-            <a class="menu" href="#Blogs">BLOGS</a>
-            <a class="menu" href="#contact">CONTATO</a>
-            <a class="menu" href="#about">SOBRE</a>
-        </nav>
-    </header>
-    <main>
-        <section class="profile">
-            <img src="assets/profile.jpg" alt="profile-img">
+    <main class="container">
+        <section class="container-msg">
+            <div class="container-options">
+                <img src="assets/profile.jpg" class="profile-picture" alt="profile-picure">
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/33/33308.png" class="contacts-icon" alt="contacts-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4785/4785877.png" class="status-icon" alt="status-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" class="messages-icon" alt="messages-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2893/2893795.png" class="options-icon" alt="options-icon">
+                </span>
+            </div> <!--containter-options-->
+            <div class="container-search">
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png" class="search-icon" alt="search-icon">
+                    <input type="text" name="search" placeholder="Pesquisar ou iniciar uma nova conversa" id="search">
+                </span>
+                <img src="https://cdn-icons-png.flaticon.com/512/3114/3114889.png" class="list-icon" alt="list-icon">
+            </div><!--container-search-->
+            <div class="container-contact-msg">
+                <div class="contact-msg-developer">
+                    <div class="contact-msg-img">
+                        <img src="assets/profile.jpg" class="contact-picture" alt="profile-picure">
+                    </div><!--contact-msg-img-->
+                    <div class="contact-msg-text">
+                        <h4>Recrutador Developer</h4>
+                        <p>KKKKKKKK lorem ipsum mors</p>
+                    </div><!--contact-msg-text-->
+                    <div class="contact-msg-icons">
+                        <p class="contact-msg-last">Ontem</p>
+                    </div><!--contact-msg-icons-->
+                </div><!--contact-msg-->
+                <hr>
+                <div class="contact-msg-pedagogy">
+                    <div class="contact-msg-img">
+                        <img src="assets/profile.jpg" class="contact-picture" alt="profile-picure">
+                    </div><!--contact-msg-img-->
+                    <div class="contact-msg-text">
+                        <h4>Recrutadora Pedagogia</h4>
+                        <p>KKKKKKKK lorem ipsum mors</p>
+                    </div><!--contact-msg-text-->
+                    <div class="contact-msg-icons">
+                        <p class="contact-msg-last">Ontem</p>
+                    </div><!--contact-msg-icons-->
+                </div><!--contact-msg-->
+                <hr>
+                <div class="contact-msg-design">
+                    <div class="contact-msg-img">
+                        <img src="assets/profile.jpg" class="contact-picture" alt="profile-picure">
+                    </div><!--contact-msg-img-->
+                    <div class="contact-msg-text">
+                        <h4>Cliente Design</h4>
+                        <p>KKKKKKKK lorem ipsum mors</p>
+                    </div><!--contact-msg-text-->
+                    <div class="contact-msg-icons">
+                        <p class="contact-msg-last">Ontem</p>
+                    </div><!--contact-msg-icons-->
+
+                </div><!--contact-msg-->
+                <hr>
+            </div> <!--container-msg-->
+
         </section>
-        <section>
-            <h3>Olá!</h3>
-            <h1>Eu sou o IGOR MAX</h1>
-            <nav>
-                <a href="#Pedagogia" class="menu2">Pedagogo</a>
-                <a href="#Programação" class="menu2">Programador</a>
-                <a href="#Design" class="menu2">Designer</a>
-            </nav>
-            <p>Sou um assistente administrativo com <strong>10 anos de mercado</strong>, que vai um pouco além da função, 
-                estou me especializando em áreas da <strong>tecnologia da informação</strong>, <strong>designer gráfico</strong> e <strong>pedagogia</strong>.
-                 Segue abaixo um breve resumo sobre as trilhas que venho percorrendo durante esses anos de profissão.</p>
+        <section class="container-chat">
+            <div class="chat-header">
+                <img src="assets/profile.jpg" class="profile-picture" alt="profile-picture">
+                <div class="chat-contact-info">
+                    <h3>Contact name</h3>
+                    <p>Click here to see about contact</p>
+                </div>
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png" class="search-icon" alt="search-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2893/2893795.png" class="options-icon" alt="options-icon">
+                </span>
+            </div><!--chat=header-->
+            <div class="chat-main">
+                <div class="chat-date">
+                    <div class="chate-date-text">
+                        <p>TODAY</p>
+                    </div>
+                </div><!--chat-date-->
+                <!--Developer chat-->
+                <div class="chat-message-developer" id="contact-message">
+                    <div class="chat-message-text" id="contact-message-text">
+                        <p>Bom-dia! Tudo bem contigo? Encontrei o seu perfil no linkedin e gostaria de saber mais sobre você!</p>
+                        <p class="chat-message-text-time">00:19</p>
+                    </div>
+                </div><!--chat-message-developer-contact-->
+                <div class="chat-message-developer" id="my-message">
+                    <div class="chat-message-text" id="my-message-text">
+                        <p>Bom-dia! Tudo sim e contigo? Sério, que legal! Com certeza, sobre o que você gostaria de saber?</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-developer-my-->
+                <div class="chat-message-developer" id="contact-message">
+                    <div class="chat-message-text" id="contact-message-text">
+                        <p>Por aqui tudo okay. Gostaria de saber sobre a sua tragetória como programador...</p>
+                        <p class="chat-message-text-time">00:19</p>
+                    </div>
+                </div><!--chat-message-developer-contact-->
+                <div class="chat-message-developer" id="my-message">
+                    <div class="chat-message-text" id="my-message-text">
+                        <p>Sempre procuro me inovar para me manter em alta no mercado, por isso hoje estou fazendo
+                             diversos cursos para aprimorar os meus conhecimentos em diversas áreas da tecnologia,
+                              alguns exemplos de cursos já concluídos são: OOP com Python, HTML básico, CSS Básico,
+                               Javascript básico, fundamentos de TI hardware & software, Pacote office intermediário,
+                                entre outros. Sei que inglês é crucial para este mercado, por isso estou estudando para
+                                 finalmente sair do inglês básico.</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-developer-my-->
+                
+
+
+                <!--Pedagogy chat-->
+                <div class="chat-message-pedagogy" id="contact-message">
+                    <div class="chat-message-text" id="contact-message-text">
+                        <p>Bom-dia! Olá, tudo bem contigo?</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-pedagogy-->
+                <div class="chat-message-pedagogy" id="my-message">
+                    <div class="chat-message-text" id="my-message-text">
+                        <p>Bom-dia! Tudo sim e com você? Como posso ajuda-la?</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-pedagogy-->
+                <div class="chat-message-pedagogy" id="contact-message">
+                    <div class="chat-message-text" id="contact-message-text">
+                        <p>Eu vi no seu linkedin que você é formado em Pedagogia, gostaria de saber mais sobre o 
+                            seu perfil, pois temos vagas que aparentemente se encaixam no seu perfil.</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-pedagogy-->
+                <div class="chat-message-pedagogy" id="my-message">
+                    <div class="chat-message-text" id="my-message-text">
+                        <p>Claro! Bom, como está descrito no meu Linkedin, eu trabalho a dez anos como assistente administrativo,
+                            mas tenho formação na área da Pedagogia. Adoro ajudar equipes a se desenvolverem e ensinar é uma de minhas paixões,
+                             por isso conclui a minha graduação em Pedagogia pela Uniesp S/A (Ribeirão Preto-SP), acredito que a esperança do mundo
+                              está no ensino base e se conseguirmos criar um ensino base de qualidade, com certeza crieremos um futuro melhor.
+                        </p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-pedagogy-->
+
+
+
+                <!--Desgin chat-->
+                <div class="chat-message-design" id="contact-message">
+                    <div class="chat-message-text" id="contact-message-text">
+                        <p>Boa tarde! Eu estou procurando um profissional para fazer um flyer para mim, você é designer?</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-design-->
+                <div class="chat-message-design" id="my-message">
+                    <div class="chat-message-text" id="my-message-text">
+                        <p>Boa tarde! Como vai você? Opa! Estou começando nesta carreira não tem muito tempo,
+                             porém já tenho alguns trabalhos feitos, se quiser dar uma olhada.</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-design-->
+                <div class="chat-message-design" id="contact-message">
+                    <div class="chat-message-text" id="contact-message-text">
+                        <p>Claro que sim, mas antes você poderia me contar um pouco mais sobre a sua carreira de Design?</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-design-->
+                <div class="chat-message-design" id="my-message">
+                    <div class="chat-message-text" id="my-message-text">
+                        <p>Com certeza!</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-design-->
+                <div class="chat-message-design" id="my-message">
+                    <div class="chat-message-text" id="my-message-text">
+                        <p>Desde criança a criatividade sempre foi o meu forte, depois de adulto a criatividade e a inovação 
+                            me fizeram trilhar um caminho na área do design gráfico também, através de maneira autodidata e cursos
+                             online eu aprendi a utilizar o software de manipulação de imagem chamado GIMP e estou estudando para 
+                             desbravar o Blender.</p>
+                        <p class="chat-message-text-time">00:50</p>
+                    </div>
+                </div><!--chat-message-design-->
+
+
+
+
+
+
+            </div><!--chat=main-->
+            <div class="chat-footer">
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/5682/5682021.png" class="emoji-icon" alt="emoji-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/45/45538.png" class="clip-icon" alt="clip-icon">
+                </span>
+                <input type="text" name="message" id="message">
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/6112/6112341.png" class="mic-icon" alt="mic-icon">
+                </span>
+            </div><!--chat-footer-->
         </section>
     </main>
-    <footer>
-        <section >
-            <h1 id="Pedagogia" name="Pedagogia">Pedagogo</h1>
-            <p>
-                Adoro ajudar equipes a se desenvolverem e ensinar é uma de minhas paixões, por isso conclui a minha graduação em
-                 Pedagogia pela Uniesp S/A (Ribeirão Preto-SP), acredito que a esperança do mundo está no ensino base e se 
-                 conseguirmos criar um ensino base de qualidade, com certeza crieremos um futuro melhor.
-            </p>
-            <h1 id="Programação" name="Programação">Programador</h1>
-            <p>
-                Sempre procuro me inovar para me manter em alta no mercado, por isso hoje estou fazendo diversos cursos para aprimorar 
-                os meus conhecimentos em diversas áreas da tecnologia, alguns exemplos de cursos já concluídos são: OOP com Python, 
-                HTML básico, CSS Básico, Javascript básico, fundamentos de TI hardware & software, Pacote office intermediário, entre 
-                outros. Sei que inglês é crucial para este mercado, por isso estou estudando para finalmente sair do inglês básico.
-            </p>
-            <h1 id="Design" name="Design">Designer</h1>
-            <p>
-                Desde criança a criatividade sempre foi o meu forte, depois de adulto a criatividade e a inovação me fizeram 
-                trilhar um caminho na área do design gráfico também, através de maneira autodidata e cursos online eu aprendi 
-                a utilizar o software de manipulação de imagem chamado GIMP e estou estudando para desbravar o Blender.
-            </p>
-        </section>
-        <section>
-            <h1>Ferramentas que utilizo</h1>
-            <ul>
-                <li>Python</li>
-                <li>MySQL</li>
-                <li>GIT</li>
-                <li>HTML5</li>
-                <li>Javascript</li>
-                <li>CSS3</li>
-                <li>GIMP</li>
-                <li>LibreOffice</li>
-                <li>Procreate</li>
-            </ul>
-        </section>
-    </footer>
 </body>
 </html>

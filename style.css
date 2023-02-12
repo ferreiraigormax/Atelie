@@ -1,64 +1,273 @@
-/*Código CSS*/
-:root{
-    --blue: #304455;
-}
 *{
-    margin: 0;
-    text-decoration: none;
+    margin: 0px;
+}
+
+:root{
+    --darkgreen: #111b21;
+    --softgreen: #202c33;
+    --white: #d4e6ef;
+    --gray: #869694;
 }
 body{
-    background-color: #d0e3f3;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-header nav{
+.container{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 30px;
-    background-color: var(--blue);
+    height: 770px;
+}
+/*Starting my first section, this section name is messages from my contacts*/
+.container-msg{
+    width: 30%;
+    height: 100%;
+    background-color: var(--darkgreen);
+}
+.container-options{
+    background-color: var(--softgreen);
+    width: 100%;
+    height: 8%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 10px;
 }
-header nav a{
-    color: white;
-    font-family: monospace;
-    font-weight: 600;
-    font-size: 18px;
-}
-a:hover{
-    color: yellow;
-    font-weight: 600;
-    text-decoration-line: underline;
-}
-main{
-    
+.container-options span{
+    margin-left: 35%;
+    margin-right: 30%;
+    gap: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+}
+.profile-picture{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.list-icon, .contacts-icon, .status-icon, .messages-icon, .options-icon, .search-icon, .mic-icon, .emoji-icon, .clip-icon{
+    width: 24px;
+    height: 24px;
+    filter: contrast(0%);
+    cursor: pointer;
+}
+.container-search{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    gap: 100px;
-    padding: 50px;
+}
+.container-search span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin: 10px;
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--softgreen);
+}
+.list-icon{
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+.search-icon{
+    margin-left: 20px;
+    width: 14px;
+    height: 14px;
 
 }
-.profile img{
-    width: 450px;
-    height: 450px;
+#search{
+    background-color: var(--softgreen);
+    color: white;
+    border: none;
+    outline: none;
+    width: 80%;
+}
+.contact-msg-developer, .contact-msg-pedagogy, .contact-msg-design{
+    width: 94%;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    color: #E9EDEF;
+    padding: 0px 15px 0px 0px;
+    background-color: var(--darkgreen);
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.contact-msg-developer:hover, .contact-msg-pedagogy:hover, .contact-msg-design:hover{
+    background-color: rgba(255, 255, 255, 0.089);
+}
+.contact-msg-developer p, .contact-msg-pedagogy p, .contact-msg-design p{
+    color: #8696A0;
+    font-size: 1vw;
+}
+
+.contact-picture{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    box-shadow: white 0px 0px 0px 10px;
 }
-h1{
-    font-size: 60px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.contact-msg-text{
+    font-size: 1vw;
+    margin-left: -30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h2{
-    font-size: 50px;
-    font-family:Arial, Helvetica, sans-serif;
+.contact-msg-last{
+    font-size: 1vw;
+    opacity: 0.6;
 }
-h3{
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+hr{
+    opacity: 0.1;
+    width: 77%;
+    margin-left: 85px;
 }
-p{
-    font-size: 30px;
+/*starting second section of my web page, this section name is chat*/
+.container-chat{
+    background-color: var(--darkgreen);
+    width: 70%;
+    height: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.103);
+    
+}
+.chat-header{
+    position: relative;
+    width: 100%;
+    height: 8%;
+    background-color: var(--softgreen);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+.chat-header span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    gap: 10px;
+}
+.chat-header img{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.chat-contact-info{
+    color: white;
+    flex-grow: 2;
+    margin-left: -80px;
+    font-size: 2vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.chat-contact-info p{
+    color: #8696A0;
+    font-size: 1.8vh;
+    cursor: pointer;
+}
+
+/*Starting my chat main text, in this section i will use to write for my portfolio*/
+.chat-main{
+    height: 84%; /*84%*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*background-image: url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80")*/
+}
+
+.chat-date{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--softgreen);
+    font-size: 12.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  #8696A0;    
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+.chat-message-developer, .chat-message-pedagogy, .chat-message-design{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 14.2px;
+    color: #E9EDEF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*height: 60px;*/
+}
+.chat-message-developer{
+    visibility: hidden;/*for disable and enable chat in JavaScript*/
+}
+.chat-message-pedagogy{
+    visibility: hidden;/*visibility: hidden;  for disable and enable chat in JavaScript*/
+}
+.chat-message-design{
+    visibility: hidden;/*visibility: hidden; for disable and enable chat in JavaScript*/
+}
+.chat-message-text{
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    max-width: 70%;
+}
+.chat-message-text-time{
+    color: #8696A0;
+    margin-top: 11px;
+}
+#contact-message{
+    margin-left: 120px;
+    justify-content: flex-start;
+}
+#contact-message-text{
+    background-color: var(--softgreen);
+}
+#my-message{
+    margin-right: 120px;
+    justify-content: flex-end;
+}
+#my-message-text{
+    background-color: rgb(0, 92,75);
+}
+/*Starting my final section, a chat write input */
+.chat-footer{
+    position: relative;
+    height: 8%;
+    width: 100%;
+    background-color: var(--softgreen);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.chat-footer span{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#message{
+    background-color: #2A3942;
+    width: 85%;
+    height: 65%;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    color: white;
+    padding-left: 10px;
 }
