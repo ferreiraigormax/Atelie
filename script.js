@@ -6,9 +6,15 @@ const contactDes = document.querySelector('.contact-msg-design')
 const chatDev = document.querySelectorAll('.chat-message-developer')
 const chatPed = document.querySelectorAll('.chat-message-pedagogy')
 const chatDes = document.querySelectorAll('.chat-message-design')
+const chatContactPicture = document.querySelector('#currently-contact-picture')
+const chatContactName = document.querySelector('.chat-contact-name')
+const chatContactLastMessage = document.querySelector('.chat-contact-last-message')
 
 
 contactDev.addEventListener('click', function(){
+    chatContactPicture.src = "assets/contact-developer-picture.jpeg"
+    chatContactName.innerHTML = "Recrutador Developer"
+    chatContactLastMessage.innerText = "Conta comercial"
     contactPed.style.bakgroundColor = 'red'
     for (var a = 0; a < chatDev.length; a++){
         chatDev[a].style.visibility = 'visible'
@@ -25,6 +31,9 @@ contactDev.addEventListener('click', function(){
 })
 
 contactPed.addEventListener('click', function(){
+    chatContactPicture.src = "assets/contact-pedagogy-picture.jpeg"
+    chatContactName.innerHTML = "Recrutador Pedagogia"
+    chatContactLastMessage.innerText = "Conta comercial"
     contactPed.style.bakgroundColor = 'red'
     for (var a = 0; a < chatDev.length; a++){
         chatDev[a].style.visibility = 'hidden'
@@ -41,6 +50,9 @@ contactPed.addEventListener('click', function(){
 })
 
 contactDes.addEventListener('click', function(){
+    chatContactPicture.src = "assets/contact-design-picture.jpeg"
+    chatContactName.innerHTML = "Cliente Design"
+    chatContactLastMessage.innerText = "last seen today at 08:00pm"
     contactDes.style.bakground   = 'red'
     for (var a = 0; a < chatDev.length; a++){
         chatDev[a].style.visibility = 'hidden'
