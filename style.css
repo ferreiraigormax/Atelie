@@ -55,6 +55,10 @@ body{
     filter: contrast(0%);
     cursor: pointer;
 }
+.pdf-icon{
+    width: 30px;
+    height: 30px;
+}
 .container-search{
     display: flex;
     flex-direction: row;
@@ -209,27 +213,27 @@ hr{
     /*height: 60px;*/
 }
 .chat-message-developer{
-    visibility: hidden;/*for disable and enable chat in JavaScript*/
+    /*visibility: hidden;for disable and enable chat in JavaScript*/
 }
 .chat-message-pedagogy{
-    visibility: hidden;/*visibility: hidden;  for disable and enable chat in JavaScript*/
+    /*visibility: hidden;visibility: hidden;  for disable and enable chat in JavaScript*/
 }
 .chat-message-design{
-    visibility: hidden;/*visibility: hidden; for disable and enable chat in JavaScript*/
+    /*visibility: hidden;visibility: hidden; for disable and enable chat in JavaScript*/
 }
-.chat-message-text{
+.chat-message-text, .chat-message-pdf{
     padding: 10px;
     border-radius: 10px;
     gap: 10px;
     margin-bottom: 12px;
     display: flex;
     flex-direction: row;    
-    align-items: center;
+    align-items: last baseline;
     max-width: 70%;
 }
 .chat-message-text-time{
     color: #8696A0;
-    margin-top: 11px;
+
 }
 #contact-message{
     margin-left: 120px;
@@ -242,8 +246,25 @@ hr{
     margin-right: 120px;
     justify-content: flex-end;
 }
-#my-message-text{
+#my-message-text, #my-message-pdf{
     background-color: rgb(0, 92,75);
+}
+.container-chat-message-pdf{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(1, 14, 1, 0.096);
+    width: 200px;
+    border-radius: 10px;
+}
+.my-cv-pdf{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    gap: 10px;
 }
 /*Starting my final section, a chat write input */
 .chat-footer{

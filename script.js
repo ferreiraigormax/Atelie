@@ -9,6 +9,8 @@ const chatDes = document.querySelectorAll('.chat-message-design')
 const chatContactPicture = document.querySelector('#currently-contact-picture')
 const chatContactName = document.querySelector('.chat-contact-name')
 const chatContactLastMessage = document.querySelector('.chat-contact-last-message')
+/*const msgPdf = document.querySelector('.container-chat-message-pdf')
+const cv = document.querySelector('.cv')*/
 
 
 contactDev.addEventListener('click', function(){
@@ -67,3 +69,13 @@ contactDes.addEventListener('click', function(){
         chatDes[c].style.order = '1'
     }
 })
+/*
+img.addEventListener('click', function(){
+    cv.style.visibility = 'hidden'
+})
+
+img.addEventListener('click', function(){
+    cv.style.visibility = 'visible'
+})
+
+*/
