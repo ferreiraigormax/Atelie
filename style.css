@@ -19,7 +19,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    height: 770px;
+    height: 100vw;
 }
 /*Starting my first section, this section name is messages from my contacts*/
 .container-msg{
@@ -30,16 +30,16 @@ body{
 .container-options{
     background-color: var(--softgreen);
     width: 100%;
-    height: 8%;
+    height: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 .container-options span{
-    margin-left: 35%;
-    margin-right: 30%;
-    gap: 30px;
+    margin-left: 25%;
+    margin-right: 20%;
+    gap: 20px;
     display: flex;
     flex-direction: row;
 }
@@ -47,7 +47,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-left: 20px;
+    margin-left: 10%;
     cursor: pointer;
 }
 .list-icon, .contacts-icon, .status-icon, .messages-icon, .options-icon, .search-icon, .mic-icon, .emoji-icon, .clip-icon{
@@ -71,20 +71,20 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
-    margin: 10px;
+    gap: 5%;
+    margin: 5%;
     width: 90%;
     height: 35px;
     border-radius: 5px;
     background-color: var(--softgreen);
 }
 .list-icon{
-    margin-right: 10px;
+    margin-right: 5%;
     width: 16px;
     height: 16px;
 }
 .search-icon{
-    margin-left: 20px;
+    margin-left: 5%;
     width: 14px;
     height: 14px;
 
@@ -98,13 +98,13 @@ body{
 }
 .contact-msg-developer, .contact-msg-pedagogy, .contact-msg-design{
     width: 100%;
-    height: 72px;
+    height: 90px;
     display: flex;
     flex-direction: row;
     color: #E9EDEF;
     padding: 0px 15px 0px 0px;
     background-color: var(--darkgreen);
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     cursor: pointer;
 }
@@ -113,71 +113,47 @@ body{
 }
 .contact-msg-developer p, .contact-msg-pedagogy p, .contact-msg-design p{
     color: #8696A0;
-    font-size: 1vw;
+    font-size: 12px;
 }
-
+.contact-msg-developer h4, .contact-msg-pedagogy h4, .contact-msg-design h4{
+    color: white;
+    font-size: 14px;
+}
 .contact-picture{
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 .contact-msg-text{
-    font-size: 1vw;
-    margin-left: -30px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 12px;
+    gap: 10px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contact-msg-last{
-    font-size: 1vw;
+    font-size: 12px;
     opacity: 0.6;
 }
 hr{
     opacity: 0.1;
     width: 77%;
-    margin-left: 85px;
+    margin-left: 20%;
 }
 /*starting second section of my web page, this section name is chat*/
 .container-chat{
     background-color: var(--darkgreen);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 70%;
+    justify-content: flex-start;
+    width:  100%;
     height: 100%;
     border-left: 1px solid rgba(255, 255, 255, 0.103);
 }
-@media (max-width: 400px) {
-    .container{
-        max-width: 375px;
-    }
-    .contact-msg-text, .contact-msg-last, hr {
-        visibility: hidden;
-    }
-
-    .contact-picture{
-        margin-left: 60%;
-    }
-    .chat-message-text{
-        width: 100%;
-    }
-    .container-options{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .container-options span{
-        margin: none;
-        gap: 10px;
-        justify-content: center;
-    }
-    .contacts-icon, .status-icon, .messages-icon, .options-icon{
-        width: 10px;
-        height: 10px;
-    }
-
-}
 .chat-header{
-    position: relative;
     width: 100%;
-    height: 8%;
+    height: 5%;
     background-color: var(--softgreen);
     display: flex;
     flex-direction: row;
@@ -212,12 +188,12 @@ hr{
 
 /*Starting my chat main text, in this section i will use to write for my portfolio*/
 .chat-main{
-    height: 84%; /*84%*/
-    max-width: 100%;
+    height: 80vh; /*84%*/
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     color: white;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -302,7 +278,7 @@ hr{
 /*Starting my final section, a chat write input */
 .chat-footer{
     position: relative;
-    height: 8%;
+    height: 5%;
     width: 100%;
     background-color: var(--softgreen);
     display: flex;
