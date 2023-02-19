@@ -227,10 +227,10 @@ hr{
 
 }
 .chat-message-pedagogy{
-    visibility: collapse; /*visibility: hidden;  for disable and enable chat in JavaScript*/
+    visibility: hidden; /*visibility: hidden;  for disable and enable chat in JavaScript*/
 }
 .chat-message-design{
-    visibility: collapse; /*visibility: hidden; for disable and enable chat in JavaScript*/
+    visibility: hideen; /*visibility: hidden; for disable and enable chat in JavaScript*/
     
 }
 .chat-message-text, .chat-message-pdf{
